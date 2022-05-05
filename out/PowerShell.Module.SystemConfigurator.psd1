@@ -2,8 +2,8 @@
   ╓──────────────────────────────────────────────────────────────────────────────────────
   ║   PowerShell Reddit Module
   ║
-  ║   Manifest File Generated on 11:27 PM
-  ║   Current Git Revision 52f80bc6ce0c8e508c2b383e0fb450b0ac087357
+  ║   Manifest File Generated on 2:19 AM
+  ║   Current Git Revision acbc764e22d0aad8fd5b20ff75173b793998415d
   ╙──────────────────────────────────────────────────────────────────────────────────────
  #>
 
@@ -12,9 +12,9 @@
 
     RootModule        =  'PowerShell.Module.SystemConfigurator.psm1'
 
-    ModuleVersion     = '2.1.16'
+    ModuleVersion     = '2.1.17'
 
-    GUID              = '457e1b86-231f-4b32-9c8b-04b2621ff79d'
+    GUID              = '3e6df867-1f89-4238-a698-efb28387421d'
 
     CompanyName       = 'Unknown'
 
@@ -49,27 +49,34 @@
 	FunctionsToExport = @(
 
 		# --- Exported Functions from DoAutomaticConfig.ps1 ---
+		"write-serr",
+		"write-smsg",
+		"Write-Title",
+		"Initialize-CoreModule",
+		"Install-PSafe",
+		"Initialize-Configurator",
+		"Invoke-RestartWithAdminPriv",
 		"Invoke-AutomaticConfig",
 
 		# --- Exported Functions from EnvironmentVariables.ps1 ---
+		"Set-ModuleGotoAliases",
+		"Set-ModuleGotoFunctions",
 		"Show-ModuleVariablesInfo",
 		"Set-ModulesEnvironmwntVariables",
-		"Set-ModuleGotoFunctions",
-		"Set-ModuleGotoAliases",
 
 		# --- Exported Functions from General.ps1 ---
+		"Save-PowerShellProfile",
 		"Invoke-ModuleShimInit",
 		"Invoke-ModuleDownloaderSetup",
 		"Invoke-ModuleBuilderSetup",
 		"Invoke-RefreshEnvironmentVariables",
-		"Save-PowerShellProfile",
 		"Save-PowerShellDevelopmentModules",
-		"Set-WellKnownPaths",
+		"Set-RegistryOrganizationHKCU",
 		"Get-RepoUrl",
-		"Invoke-ModuleShimMenuSetup",
+		"Set-WellKnownPaths",
 		"Import-SystemEnvironmentValues",
 		"Check-ValidateBeforeStart",
-		"Set-RegistryOrganizationHKCU",
+		"Invoke-ModuleShimMenuSetup",
 		"New-PowerShellDirectoryStructure",
 		"Save-PowerShellModuleBuilder",
 
