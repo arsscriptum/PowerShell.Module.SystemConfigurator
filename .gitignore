@@ -4,8 +4,7 @@ generated/
 tmp/*
 staging/*
 generated/*
-out/
-out/*
+
 *.TempPoint.*
 *.Export.*
 *.psprojs
