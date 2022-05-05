@@ -26,7 +26,7 @@ function Show-ModuleVariablesInfo{
 
 
 
-function Set-ModuleVariables {
+function Set-ModulesEnvironmwntVariables {
     [CmdletBinding(SupportsShouldProcess)]
     Param
     (
